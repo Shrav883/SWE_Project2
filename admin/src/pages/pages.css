@@ -1,0 +1,233 @@
+/* pages.css */
+
+/* Existing styles (if any) */
+
+.add-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    /* Light grey background */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    font-family: 'Roboto', sans-serif;
+    /* Use a common, clean font */
+    max-width: 600px;
+    /* Optional: Adjust as needed */
+    margin: 20px auto;
+    /* Optional: Center the form */
+}
+
+.upload-title-container {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.upload-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* Semi-bold */
+    color: #333;
+    /* Dark grey text */
+    margin: 0;
+}
+
+.upload-area-container {
+    display: flex;
+    justify-content: center;
+    /* Center the upload labels horizontally */
+    gap: 10px;
+    /* Maintain spacing between labels */
+    margin-bottom: 20px;
+    /* Add some space below the upload area */
+}
+
+.upload-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    /* White background for upload area */
+    border: 1px dashed #ccc;
+    /* Dashed border */
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+    background-color: #eee;
+    /* Slightly darker on hover */
+}
+
+.upload-icon {
+    width: 40px;
+    height: 40px;
+    opacity: 0.7;
+}
+
+.upload-input {
+    /* Hidden by default */
+}
+
+/* Style for the input groups (label + input) */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* Small gap between label and input */
+    margin-bottom: 15px;
+    /* Space between input groups */
+}
+
+.input-label {
+    font-size: 1rem;
+    color: #555;
+    /* Medium grey label text */
+    font-weight: 400;
+}
+
+.input-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.input-field::placeholder {
+    color: #999;
+    /* Light grey placeholder text */
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #007bff;
+    /* Example focus color */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Example focus shadow */
+}
+
+/* Style for textarea */
+.input-field[type="text"],
+.input-field[type="date"] {
+    /* Apply same styles as other input fields */
+}
+
+.input-field[type="date"] {
+    width: 150px;
+    /* Adjust width for date input */
+}
+
+.textarea.input-field {
+    min-height: 100px;
+}
+
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #c82333;
+}
+
+/* Styles for the List component */
+.list-page-container {
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    /* Or your preferred font */
+}
+
+.list-page-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.list-table-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    /* Optional: Add a border around the list */
+    border-radius: 8px;
+    overflow: hidden;
+    /* Hide any overflow from rounded corners */
+}
+
+.list-table-header {
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr 80px 80px;
+    /* Adjust column widths as needed */
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #eee;
+}
+
+.list-table-header b {
+    font-weight: bold;
+    color: #555;
+}
+
+.list-table-row {
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr 80px 80px;
+    /* Match header columns */
+    gap: 10px;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+    /* Vertically align items */
+}
+
+.list-table-row:last-child {
+    border-bottom: none;
+}
+
+.list-item-image {
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 4px;
+    object-fit: cover;
+    /* Ensure images fit within the container */
+}
+
+.list-item-name,
+.list-item-category {
+    margin: 0;
+    color: #333;
+    overflow: hidden;
+    /* Handle potentially long text */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.list-item-price {
+    margin: 0;
+    font-weight: bold;
+    color: #007bff;
+    /* Or your preferred price color */
+    text-align: right;
+}
+
+.list-item-action {
+    margin: 0;
+    text-align: center;
+    color: #dc3545;
+    /* Red color for potential delete action */
+    cursor: pointer;
+    /* Indicate it's clickable */
+}
