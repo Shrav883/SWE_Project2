@@ -1,12 +1,33 @@
-# React + Vite
+# Admin - SWE_Project2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+This folder contains the code for the administrator side of the e-commerce application. It provides interfaces and functionalities for managing the application.
 
-Currently, two official plugins are available:
+## Features
+* Movie Management: Likely includes adding, editing, and deleting movies.
+* Seat Management:  Potentially includes managing seat availability and layouts.
+* Booking Management: Likely includes viewing, and managing bookings.
+* User Management: Could include managing user accounts.
+* Product Management: If this was a general e-commerce site, this would handle adding/editing products.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technical Details
+* The admin panel is likely a web application.
+* It would communicate with the backend API to manage data.
+* The technologies used could include React, Angular, or Vue.js.
 
-## Expanding the ESLint configuration
+## How to Get Started
+1.  **Installation:**
+    * Clone this repository.
+    * Install the necessary dependencies (e.g., using `npm install` or `yarn install`).
+    * Configure the application to connect to the backend API.
+2.  **Running the application:**
+    * Start the admin panel application (e.g., using `npm start`).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Dependencies
+* React, Angular, or Vue.js, or other front-end framework.
+* HTTP client (e.g., Axios, fetch)
+* UI component libraries.
+
+## Notes
+* The admin panel requires the backend API to be running.
+* See the admin panel code for specific details on features and functionality.
